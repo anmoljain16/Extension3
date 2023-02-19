@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Ums Simplifier",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "logo.png"
+  },
+  "author": "Anmol Jain",
+  "permissions":[
+    "activeTab",
+    "scripting"
+  ],
+  "options_page":"Credentials.html",
+  "content_scripts":[
+    {
+      "matches" : ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
